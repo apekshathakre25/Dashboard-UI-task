@@ -36,6 +36,7 @@ const Dashboard = () => {
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
    const navigate = useNavigate();
+   const pokemonIds = [25, 4, 7, 1, 54, 133];
 
 
   const toggleSidebar = () => {
@@ -692,14 +693,14 @@ const Dashboard = () => {
 
                 <div className="mt-6 bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
                   <h3 className="font-semibold mb-3 text-lg">Your Team</h3>
-                  <div className="flex justify-between">
-                    {[25, 4, 7, 1, 54, 133].map((id) => (
-                      <div key={id} className="relative group">
+                  <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-2 md:gap-4">
+                    {pokemonIds.map((id) => (
+                      <div key={id} className="relative group flex justify-center">
                         <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform">
                           <img
                             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
-                            alt="Team Pokémon"
-                            className="w-16 h-16"
+                            alt={`Pokemon #${id}`}
+                            className="w-14 h-14"
                           />
                         </div>
                       </div>
