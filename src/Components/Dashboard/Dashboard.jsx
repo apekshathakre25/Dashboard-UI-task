@@ -20,6 +20,8 @@ import { UserState } from "../Context/UserContext";
 import axios from "axios";
 import Chart from "chart.js/auto";
 
+
+
 const Dashboard = () => {
   const { logout } = UserState();
   const [loading, setLoading] = useState(true);
@@ -31,6 +33,7 @@ const Dashboard = () => {
   const [chartFilter, setChartFilter] = useState("types");
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
+ 
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
