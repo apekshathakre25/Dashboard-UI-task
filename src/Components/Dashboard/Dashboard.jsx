@@ -19,6 +19,8 @@ import Loader from "../Utiles/Loader";
 import { UserState } from "../Context/UserContext";
 import axios from "axios";
 import Chart from "chart.js/auto";
+import {useNavigate} from "react-router-dom"
+
 
 
 
@@ -33,7 +35,8 @@ const Dashboard = () => {
   const [chartFilter, setChartFilter] = useState("types");
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
- 
+   const navigate = useNavigate();
+
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -41,6 +44,7 @@ const Dashboard = () => {
 
   const handleLogout = () => {
     logout();
+    navigate("/")
   };
 
   useEffect(() => {
