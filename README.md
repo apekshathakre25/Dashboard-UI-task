@@ -25,6 +25,16 @@ npm run dev
 - **Styling**: TailwindCSS
 - **Data Visualization**: Chart.js
 
+
+Creadintials :-
+Login Credentials : - 
+1) Email :- eve.holt@reqres.in
+2) password :- cityslicka
+
+Sign Up Credintials:-
+1) Email :- eve.holt@reqres.in
+2) password :- pistol
+
 # Pokemon Dashboard
 
 
