@@ -3,7 +3,7 @@
 A fully responsive dashboard application with Pokemon data visualization and JWT authentication.
 
 ## 🔗 Quick Links
-- [Live Demo](https://dashboard-ui-task-three.vercel.app/)
+- [Live Demo](dashboard-ui-task-apeksha-thakres-projects.vercel.app)
 
 
 ## 📋 Installation
